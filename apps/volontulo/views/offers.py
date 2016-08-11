@@ -270,7 +270,9 @@ class OffersEdit(View):
                 offer.reject()
             return redirect('offers_list')
 
-        form = CreateOfferForm(request.POST, instance=offer)  # pylint: disable=redefined-variable-type
+        form = CreateOfferForm(  # pylint: disable=redefined-variable-type
+            request.POST, instance=offer
+        )
 
         if form.is_valid():
             offer = form.save()

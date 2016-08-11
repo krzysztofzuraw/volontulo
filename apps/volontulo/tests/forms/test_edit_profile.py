@@ -35,7 +35,6 @@ class TestEditProfileForm(TransactionTestCase):
         form = EditProfileForm(data=form_data)
         self.assertTrue(form.is_valid())
 
-
     def test__is_validate__empty_passwords__form_is_not_valid(self):
         u"""Test is_validate() method.
 

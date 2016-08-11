@@ -34,6 +34,7 @@ def logged_as_admin(request):
         UserProfile.objects.get(user=request.user).is_administrator
     )
 
+
 def homepage(request):
     u"""Main view of app.
 

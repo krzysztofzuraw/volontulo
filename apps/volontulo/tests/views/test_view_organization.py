@@ -36,7 +36,6 @@ class TestCreateOrganization(TestOrganizations):
         self.assertTemplateUsed(response, 'contact_form.html')
         self.assertContains(response, u'Wyślij')
 
-
     def test__get_filled_organization_view_by_anonymous(self):
         u"""Request for filled organization view by anonymous user."""
         response = self.client.get('/organizations/organization-2/{}'.format(

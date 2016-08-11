@@ -26,7 +26,6 @@ class TestUsersProfile(TestCase):
         u"""Set up each test."""
         self.client = Client()
 
-
     def test__logged_user_profile_anonymous(self):
         u"""Testing user profile page for anonymous."""
         response = self.client.get('/me', follow=True)
@@ -86,7 +85,6 @@ class TestUsersProfile(TestCase):
             u"Zgłoś się w jednej z dostępnych "
             u"ofert wolontariuatu i zapełnij to miejsce."
         )
-
 
     def test__logged_user_profile_empty_organization(self):
         u"""Testing user profile page for empty organization."""

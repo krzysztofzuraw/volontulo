@@ -24,7 +24,6 @@ class TestCreateOrganization(TestOrganizations):
             200,
         )
 
-
     def test__create_organization_get_form_authorized(self):
         u"""Test getting form for creating organization as authorized."""
         self.client.post('/login', {

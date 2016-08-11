@@ -61,7 +61,6 @@ def initialize_empty_organization():
     return organization1
 
 
-
 def initialize_filled_volunteer_and_organization():
     u"""Initialize volunteer filled with data."""
     # create volunteer user

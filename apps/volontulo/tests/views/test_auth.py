@@ -66,7 +66,6 @@ class TestRegister(TransactionTestCase):
         self.assertNotIn('_auth_user_id', self.client.session)
         self.assertEqual(User.objects.all().count(), 1)
 
-
     def test_register_without_term_acceptance(self):
         u"""Test for registration without accepted terms."""
         response = self.client.post('/register', {
